@@ -1,0 +1,16 @@
+class Main {
+    public int count(int num){
+        int count = 0;
+        while(num > 0){
+            num /= 10;
+            count++;
+        }
+        return count;
+    }
+  public static void main(String[] args) {
+      int num = 748894;
+      Main obj = new Main();
+      
+    System.out.println(obj.count(num));
+  }
+}
